@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="calculator-grid">
+      <div class="top"></div>
+      <div class="first">
+        <button onclick="clearData()">AC</button>
+        <button onclick="delData()">DEL</button>
+        <button onclick="setValue('/')">/</button>
+      </div>
+      <div class="child">
+        <button id="1" onclick="setValue('1')">1</button>
+        <button id="2" onclick="setValue('2')">2</button>
+        <button id="3" onclick="setValue('3')">3</button>
+        <button onclick="setValue('*')">*</button>
+      </div>
+      <div class="child">
+        <button id="4" onclick="setValue('4')">4</button>
+        <button id="5" onclick="setValue('5')">5</button>
+        <button id="6" onclick="setValue('6')">6</button>
+        <button onclick="setValue('+')">+</button>
+      </div>
+      <div class="child">
+        <button id="7" onclick="setValue('7')">7</button>
+        <button id="8" onclick="setValue('8')">8</button>
+        <button id="9" onclick="setValue('9')">9</button>
+        <button onclick="setValue('-')">-</button>
+      </div>
+      <div class="last">
+        <button id="10" style="border-radius:0px 0px 0px 5px">Hello</button>
+        <button id="0" onclick="setValue('0')">0</button>
+        <button id="equals" onclick="computeData()" style="border-radius:0px 0px 5px 0px">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
